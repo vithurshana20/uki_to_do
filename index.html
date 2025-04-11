@@ -7,21 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <div class="container">
-        <h1>Todo List</h1>
-        <form id="todo-form">
-          <input type="text" id="todo-input" placeholder="Enter a new task" >
-            <select id="todo-priority">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
-          <button type="submit">Add</button>
-        </form>
-        <ul id="todo-list"></ul>
-      </div>
-     
-    
+    <div class="todo-box">
+        <h1>To Do List</h1>
+        <input type="text" id="task-input" placeholder="Enter your task" >
+        <select id="priority-input">
+        <option value="low">🟢Low</option>
+        <option value="medium">🟠Medium</option>
+        <option value="high">🔴High</option>
+        </select>
+        <button id="add-task">Add</button>
+        <ul id="task-list"></ul>
+        <p id="task-counter">finished: 0 | notfinished: 0</p>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
